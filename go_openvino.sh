@@ -3,7 +3,7 @@
 # based on https://software.intel.com/en-us/articles/OpenVINO-Install-RaspberryPI
 # assumes Raspberry Pi Raspbian Stretch November 2018
 # have had to replace "source" command with . because of sh issues when trying to migrate to docker
-# run this script in your home directory by typing sudo bash ./go_openvino.sh
+# run this script in your home directory by typing bash ./go_openvino.sh
 # after installing, it runs the c based face detect sample when finished but you will need a face.jpg image
 # in you home directory before you run this script
 
