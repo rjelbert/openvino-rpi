@@ -11,6 +11,10 @@
 sudo dpkg --add-architecture armhf
 echo "Updating base OS..."
 sudo apt-get update && sudo apt-get upgrade -y
+# these next two lines should avoid getting a no space left on device error during install
+sudo apt-get autoremove
+sudo apt-get clean
+# now install
 echo "Installing dependencies..."
 sudo apt-get install -y build-essential cmake pkg-config wget lsb-release apt-utils libusb-1.0.0
 echo "Downloading OpenVINO SDK..."
